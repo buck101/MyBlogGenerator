@@ -1,0 +1,44 @@
+
+#markdown: maruku
+#markdown: rdiscount
+markdown: kramdown
+#markdown: redcarpet
+#pandoc:  true
+
+permalink:    /posts/:year-:month-:day-:title.html
+#title:        陈辉
+#description:  陈辉的个人站点,记录心情与知识。
+#keywords:     陈辉,个人站点,博客,心情,知识,编程
+#author:       陈辉
+#email:        chenhui101@gmail.com
+#github:       http://github.com/buck101
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  auto_id_prefix: 'id-'
+  #footnote_nr:   1
+  #entity_output: as_char
+  #toc_levels:    1..6
+  #smart_quotes:  lsquo,rsquo,ldquo,rdquo
+  #syntax_highlighter: coderay 
+  #coderay_line_numbers: nil
+  use_coderay: false
+  enable_coderay: false
+
+rdiscount:
+    extensions:
+      - generate_toc
+
+redcarpet:
+    extensions: 
+        - no_intra_emphasis
+        - fenced_code_blocks
+        - autolink
+        - tables
+        - strikethrough
+        - with_toc_data
+        - html_toc
+        - footnotes
+
+
